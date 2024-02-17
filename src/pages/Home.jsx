@@ -1,13 +1,10 @@
-import { MainFrame } from "./Home.styled";
-import Accordion from "../components/Accordion/Accordion";
-import { meniu } from "../data/meniu";
-import image from "./plane.png";
+import { MainFrame } from './Home.styled';
+import image from './plane.png';
 
 const Home = () => {
   return (
     <MainFrame>
       <img src={image} alt="airplane"></img>
-      {/* <Accordion data={meniu} /> */}
     </MainFrame>
   );
 };
