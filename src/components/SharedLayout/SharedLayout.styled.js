@@ -1,16 +1,12 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const hdrHghtPercent = 8;
 let headerHeight =
-  Math.floor((window.innerHeight * hdrHghtPercent) / 100).toString() + "px";
+  Math.floor((window.innerHeight * hdrHghtPercent) / 100).toString() + 'px';
 let backDivHeight =
   Math.floor((window.innerHeight * (100 - hdrHghtPercent)) / 100).toString() +
-  "px";
-
-console.log(window.innerHeight);
-console.log(headerHeight);
-console.log(backDivHeight);
+  'px';
 
 export const Container = styled.div`
   // border: 1px solid red;
@@ -37,6 +33,9 @@ export const Logo = styled.p`
   align-items: center;
   > span {
     font-size: 25px;
+  }
+  > img {
+    width: 40px;
   }
 `;
 

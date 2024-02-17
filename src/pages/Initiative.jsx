@@ -1,31 +1,22 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from 'react-router-dom';
 
 const Initiative = () => {
   return (
     <main>
-      <h1>About Us</h1>
+      <h1>I N I T I A T I V E</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-        laborum amet ab cumque sit nihil dolore modi error repudiandae
-        perspiciatis atque voluptas corrupti, doloribus ex maiores quam magni
-        mollitia illum dolor quis alias in sequi quod. Sunt ex numquam hic
-        asperiores facere natus sapiente cum neque laudantium quam, expedita
-        voluptates atque quia aspernatur saepe illo, rem quasi praesentium
-        aliquid sed inventore obcaecati veniam? Nisi magnam vero, dolore
-        praesentium totam ducimus similique asperiores culpa, eius amet
-        repudiandae quam ut. Architecto commodi, tempore ut nostrum voluptas
-        dolorum illum voluptatum dolores! Quas perferendis quis alias excepturi
-        eaque voluptatibus eveniet error, nulla rem iusto?
+        Oamenii inimoși care doresc să se alăture eforturilor membrilor
+        asociației noastre, aflați la început, formează inițiative.
       </p>
       <ul>
         <li>
-          <Link to="mission">Read about our mission</Link>
+          <Link to="mission">Localitatea 1</Link>
         </li>
         <li>
-          <Link to="team">Get to know the team</Link>
+          <Link to="team">Localitatea 2</Link>
         </li>
         <li>
-          <Link to="reviews">Go through the reviews</Link>
+          <Link to="reviews">Localitatea 3</Link>
         </li>
       </ul>
       <Outlet />

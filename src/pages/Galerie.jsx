@@ -1,11 +1,19 @@
-import { ProductList } from "../components/ProductList";
-import { getProducts } from "../fakeAPI";
+import React from 'react';
+import { galerie } from 'data/galerie';
+import './Galerie.css';
 
 const Galerie = () => {
-  const products = getProducts();
   return (
-    <main>
-      <ProductList products={products} />
+    <main className="maindiv">
+      {galerie.map(({ text, path, image }, index) => {
+        let source = path + image;
+        return (
+          <figure key={index}>
+            <img src={source} alt="plane" />
+            <figcaption>{text}</figcaption>
+          </figure>
+        );
+      })}
     </main>
   );
 };

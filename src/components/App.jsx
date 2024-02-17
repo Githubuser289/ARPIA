@@ -1,16 +1,15 @@
-import { Route, Routes } from "react-router-dom";
-import Activitati from "../pages/Activitati";
-import Asociatia from "../pages/Asociatia";
-import Filiale from "../pages/Filiale";
-import Galerie from "../pages/Galerie";
-import Home from "../pages/Home";
-import Initiative from "../pages/Initiative";
-import { ProductDetails } from "../pages/ProductDetails";
-import { DetaliiFiliala } from "../pages/DetaliiFiliala";
-import { Mission } from "./Mission";
-import { Team } from "./Team";
-import { Reviews } from "./Reviews";
-import { SharedLayout } from "./SharedLayout";
+import { Route, Routes } from 'react-router-dom';
+import Activitati from '../pages/Activitati';
+import Asociatia from '../pages/Asociatia';
+import Filiale from '../pages/Filiale';
+import Galerie from '../pages/Galerie';
+import Home from '../pages/Home';
+import Initiative from '../pages/Initiative';
+import { DetaliiFiliala } from '../pages/DetaliiFiliala';
+import { Mission } from './Mission';
+import { Team } from './Team';
+import { Reviews } from './Reviews';
+import { SharedLayout } from './SharedLayout/SharedLayout';
 
 export const App = () => {
   return (
@@ -27,7 +26,6 @@ export const App = () => {
         </Route>
         <Route path="activitati" element={<Activitati />} />
         <Route path="galerie" element={<Galerie />} />
-        <Route path="galerie/:id" element={<ProductDetails />} />
       </Route>
     </Routes>
   );

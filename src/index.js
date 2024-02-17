@@ -9,7 +9,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename="/ARPIA/">
+    <BrowserRouter basename="/ARPIA">
       <App />
     </BrowserRouter>
   </StrictMode>

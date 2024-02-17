@@ -1,0 +1,9 @@
+.maindiv {
+    background-color: #bfe7f2;
+    display: flex;
+}
+
+.maindiv img {
+    height: 300px;
+    width: auto;
+}

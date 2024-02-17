@@ -1,12 +1,13 @@
-import { Outlet } from "react-router-dom";
-import { BackDiv, Container, Header, Logo, Link } from "./SharedLayout.styled";
-import icon from "../pages/war-plane-50x50.png";
+import { Outlet } from 'react-router-dom';
+import { BackDiv, Container, Header, Logo, Link } from './SharedLayout.styled';
+import icon from './war-plane-icon.png';
+
 export const SharedLayout = () => {
   return (
     <Container>
       <Header>
         <Logo>
-            <img src={icon} alt="jet icon"></img>   A.R.P.I.A.
+             <img src={icon} alt="jet icon"></img>  A.R.P.I.A.
         </Logo>
         <nav>
           <Link to="/">Prima pagină</Link>
