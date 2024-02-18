@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.main`
-  background-color: #bfe7f2;
+  background-color: #e8ffff;
   display: flex;
   flex-direction: column;
   > a {

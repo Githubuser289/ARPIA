@@ -11,7 +11,7 @@ import { Team } from './Team';
 import { Reviews } from './Reviews';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 
-export const App = () => {
+export function App() {
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
@@ -29,6 +29,6 @@ export const App = () => {
       </Route>
     </Routes>
   );
-};
+}
 // paleta de culori
 // https://pankod.github.io/superplate/docs/react/styled-components/

@@ -59,5 +59,5 @@ export const BackDiv = styled.div`
   height: ${backDivHeight};
   width: 100%;
   // background-color: #c1c8e4;
-  background-color: #bfe7f2;
+  background-color: #e8ffff;
 `;

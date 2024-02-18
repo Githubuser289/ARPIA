@@ -1,73 +1,91 @@
-import { MainFrame } from './Home.styled';
+import { useEffect, useState } from 'react';
+import { Cover, MainFrame, Piece } from './Home.styled';
 import image from './plane.png';
 
+let titleBox, coverElem, backImg;
+let animTitle, animCoverElem, animBackImg;
+
 const Home = () => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    function animate() {
+      titleBox = document.getElementsByClassName('box')[0];
+      animTitle = titleBox.animate(
+        [{ transform: 'translateX(-100px)' }, { transform: 'translateX(0px)' }],
+        {
+          duration: 1500,
+          iterations: 1,
+        }
+      );
+      coverElem = document.getElementById('cover');
+      animCoverElem = coverElem.animate(
+        [
+          { transform: 'translateX(-2005px)' },
+          { transform: 'translateX(-2000px)' },
+          { transform: 'translateX(-1800px)' },
+        ],
+        {
+          duration: 3000,
+          iterations: 1,
+        }
+      );
+      backImg = document.getElementsByTagName('img')[1];
+      animBackImg = backImg.animate(
+        {
+          opacity: [0, 1],
+        },
+        {
+          delay: 3000,
+          duration: 3000,
+          iterations: 1,
+        }
+      );
+      animBackImg.onfinish = event => {
+        titleBox.innerHTML = '';
+      };
+    }
+    function pauseNremove() {
+      if (counter > 1) return;
+      animTitle.cancel();
+      animCoverElem.cancel();
+      backImg.getAnimations().forEach(animation => animation.finish());
+    }
+    window.addEventListener('click', pauseNremove);
+    if (counter !== 0) return;
+    animate();
+    setCounter(counter => counter + 1);
+    // va tb si return pt curatenie la incheierea animatiei
+  }, [counter]);
+
   return (
     <MainFrame>
       <img src={image} alt="airplane"></img>
+      <div className="box">
+        <Piece>
+          <h1>A</h1>
+          <span>SOCIAȚIA</span>
+        </Piece>
+        <Piece>
+          <h1>R</h1>
+          <span>OMÂNĂ PENTRU</span>
+        </Piece>
+        <Piece>
+          <h1>P</h1>
+          <span>ROPAGANDA ȘI</span>
+        </Piece>
+        <Piece>
+          <h1>I</h1>
+          <span>STORIA</span>
+        </Piece>
+        <Piece>
+          <h1>A</h1>
+          <span>ERONAUTICII</span>
+        </Piece>
+        <Cover id="cover"></Cover>
+      </div>
     </MainFrame>
   );
 };
 
 export default Home;
-/*
-import { MainFrame, Frame, Caps } from "./Home.styled";
-
-
-export const MainFrame = styled.main`
-  position: relative;
-  padding: 8px 0;
-  width: 100%;
-  // margin: auto;
-  border-bottom: 1px solid black;
-  background-color: lightgrey;
-  > img {
-    height: 100%;
-    opacity: 0.3;
-  }
-  > div {
-    border: 1px solid green;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
-    gap: 12px;
-  }
-`;
-
-
-
-<div>
-        <Frame>
-          <Caps>
-            A<i>sociația</i>
-          </Caps>
-        </Frame>
-        <Frame>
-          <Caps>
-            R<i>omână pentru</i>
-          </Caps>
-        </Frame>
-        <Frame>
-          <Caps>
-            P<i>ropaganda și</i>
-          </Caps>
-        </Frame>
-        <Frame>
-          <Caps>
-            I<i>storia</i>
-          </Caps>
-        </Frame>
-        <Frame>
-          <Caps>
-            A<i>viației</i>
-          </Caps>
-        </Frame>
-      </div>
-
-*/
