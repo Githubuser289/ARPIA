@@ -10,14 +10,16 @@ export const MainFrame = styled.main`
   width: 100%;
   // background-color: #c1c8e4;
   // background-color: #bfe7f2;
-  // background-color: #cdeef6;
+  background-color: #e8ffff;
 
   > img {
     // opacity: 0.3;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 98%;
+    height: 98%;
+
+    object-fit: fit;
   }
+  // ATENTIE!!!! AFECTEAZA SI ALTE DIVURI---VEZI ACCORDION
   > div {
     position: absolute;
     top: 0;

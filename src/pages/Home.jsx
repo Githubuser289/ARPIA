@@ -42,16 +42,16 @@ const Home = () => {
         }
       );
       animBackImg.onfinish = event => {
-        titleBox.innerHTML = '';
+        const markup = `<p></p><h2>Aici pot apare anunturi si ultimele n postari cu activitati desfasurate in toate filialele</h2>`;
+        titleBox.innerHTML = markup;
       };
     }
-    function pauseNremove() {
+    window.addEventListener('click', () => {
       if (counter > 1) return;
       animTitle.cancel();
       animCoverElem.cancel();
       backImg.getAnimations().forEach(animation => animation.finish());
-    }
-    window.addEventListener('click', pauseNremove);
+    });
     if (counter !== 0) return;
     animate();
     setCounter(counter => counter + 1);

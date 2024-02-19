@@ -1,5 +1,6 @@
-import { Link, Outlet } from "react-router-dom";
-import { filiale } from "../data/filiale";
+import { Link, Outlet } from 'react-router-dom';
+import { filiale } from '../data/filiale';
+import './Filiale.css';
 
 const Filiale = () => {
   return (

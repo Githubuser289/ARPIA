@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./Accordion.css";
+import { useState } from 'react';
+import './Accordion.css';
 
 function Accordion({ data }) {
   const [curOpen, setCurOpen] = useState(null);
@@ -29,10 +29,10 @@ function AccordionItem({ num, title, curOpen, onOpen, children }) {
   }
 
   return (
-    <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
+    <div className={`item ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
       <p className="number">*</p>
       <p className="title">{title}</p>
-      <p className="icon">{isOpen ? "-" : "+"}</p>
+      <p className="icon">{isOpen ? '-' : '+'}</p>
 
       {isOpen && <div className="content-box">{children}</div>}
     </div>

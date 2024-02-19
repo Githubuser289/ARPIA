@@ -1,12 +1,12 @@
-import { MainFrame } from "./Home.styled";
-import Accordion from "../components/Accordion/Accordion";
-import { meniu } from "../data/meniu";
+import Accordion from '../components/Accordion/Accordion';
+import { meniu } from '../data/meniu';
+import './Asociatia.css';
 
 const Asociatia = () => {
   return (
-    <MainFrame>
+    <div className="asociatia">
       <Accordion data={meniu} />
-    </MainFrame>
+    </div>
   );
 };
 
