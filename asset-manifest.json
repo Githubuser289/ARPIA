@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ARPIA/static/css/main.17d67bee.css",
-    "main.js": "/ARPIA/static/js/main.1a87c9dc.js",
+    "main.css": "/ARPIA/static/css/main.0a157bdb.css",
+    "main.js": "/ARPIA/static/js/main.c9a9c1b4.js",
     "static/media/plane.png": "/ARPIA/static/media/plane.2c092bec9ff88fdceb0a.png",
     "index.html": "/ARPIA/index.html",
-    "main.17d67bee.css.map": "/ARPIA/static/css/main.17d67bee.css.map",
-    "main.1a87c9dc.js.map": "/ARPIA/static/js/main.1a87c9dc.js.map"
+    "main.0a157bdb.css.map": "/ARPIA/static/css/main.0a157bdb.css.map",
+    "main.c9a9c1b4.js.map": "/ARPIA/static/js/main.c9a9c1b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.17d67bee.css",
-    "static/js/main.1a87c9dc.js"
+    "static/css/main.0a157bdb.css",
+    "static/js/main.c9a9c1b4.js"
   ]
 }
