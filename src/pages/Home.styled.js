@@ -19,16 +19,15 @@ export const MainFrame = styled.main`
 
     object-fit: fit;
   }
-  // ATENTIE!!!! AFECTEAZA SI ALTE DIVURI---VEZI ACCORDION
-  > div {
-    position: absolute;
-    top: 0;
-    left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 0 auto;
-  }
+`;
+export const TitleBox = styled.div`
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
 `;
 
 export const Piece = styled.div`

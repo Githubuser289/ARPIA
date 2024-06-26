@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Accordion.css';
+import Contact from './Contact.jsx';
 
 function Accordion({ data }) {
   const [curOpen, setCurOpen] = useState(null);
@@ -12,6 +13,7 @@ function Accordion({ data }) {
           onOpen={setCurOpen}
           title={el.title}
           num={i}
+          link={el.link || ''}
           key={el.title}
         >
           {el.text}
@@ -21,7 +23,7 @@ function Accordion({ data }) {
   );
 }
 
-function AccordionItem({ num, title, curOpen, onOpen, children }) {
+function AccordionItem({ curOpen, onOpen, title, num, link, children }) {
   const isOpen = num === curOpen;
 
   function handleToggle() {
@@ -35,6 +37,17 @@ function AccordionItem({ num, title, curOpen, onOpen, children }) {
       <p className="icon">{isOpen ? '-' : '+'}</p>
 
       {isOpen && <div className="content-box">{children}</div>}
+      {isOpen && link !== '' && (
+        <a
+          className="content-box"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          link spre document
+        </a>
+      )}
+      {isOpen && title === 'Contact' && <Contact />}
     </div>
   );
 }

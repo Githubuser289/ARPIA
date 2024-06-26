@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Cover, MainFrame, Piece } from './Home.styled';
+import { Cover, MainFrame, Piece, TitleBox } from './Home.styled';
 import image from './plane.png';
 
 let titleBox, coverElem, backImg;
@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <MainFrame>
       <img src={image} alt="airplane"></img>
-      <div className="box">
+      <TitleBox className="box">
         <Piece>
           <h1>A</h1>
           <span>SOCIAȚIA</span>
@@ -83,7 +83,7 @@ const Home = () => {
           <span>ERONAUTICII</span>
         </Piece>
         <Cover id="cover"></Cover>
-      </div>
+      </TitleBox>
     </MainFrame>
   );
 };

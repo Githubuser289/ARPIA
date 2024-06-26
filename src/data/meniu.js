@@ -1,20 +1,17 @@
 export const meniu = [
   {
-    title: 'Scurtă prezentare',
-    text: `Asociația Română pentru Propaganda și Istoria Aeronauticii. este o asociație autonomă și apolitică cu caracter cultural-științific și istoric, deschisă tuturor celor interesați, iubitori ai aeronauticii.   \n\r <br>Asociația își propune să continue activitatea Asociației Române pentru Propaganda Aviației (A.R.P.A.), creată în anul 1926. Obiectul A.R.P.I.A. constă în coordonarea activităților pentru cunoașterea și răspândirea adevărurilor despre aeronautica și astronautica națională și universală, cultivarea sentimentelor de mândrie față de realizările poporului român în domeniul aeronauticii, atragerea tineretului la cunoașterea și dezvoltarea aeronauticii și astronauticii contemporane. Asociația Română pentru Propaganda și Istoria Aeronauticii este înscrisă în Catalogul Organizațiilor Neguvernamentale din România la numărul de ordine 1736.`,
+    title: 'Scurt istoric',
+    text: `*** trebuie stabilit ce va apare`,
   },
   {
-    title: 'Organizare',
-    text:
-      'A.R.P.I.A. se organizează, la nivel național, cu organe de conducere centrale și locale, cu filiale în localitățile unde se întrunesc cel puțin 15 membri, în afara membrilor aspiranți, fără a exista două sau mai multe filiale în aceeași localitate.\n' +
-      'Organele de conducere ale A.R.P.I.A. sunt:\n' +
-      '•	Adunarea generală\n' +
-      '•	Consiliul general\n' +
-      '•	Biroul Consiliului general\n' +
-      '•	Președintele A.R.P.I.A.\n' +
-      '•	Vicepreședinții\n' +
-      '•	Secretarul general\n' +
-      '•	Trezorierul filialei',
+    title: 'Statutul ARPIA',
+    text: 'Asociația Română pentru Propaganda şi Istoria Aeronauticii este persoană juridică română de drept privat, fără scop patrimonial, constituită în temeiul dreptului constituțional la liberă asociere și a prevederilor Ordonanței Guvernului nr. 26/2000 cu privire la asociații și fundații, aprobată prin Legea nr. 246/2005, cu modificările și completările ulterioare. Asociația își desfășoară activitatea în baza legislației în vigoare și a prezentului statut.',
+    link: '/ARPIA/statutARPIA.pdf',
+  },
+  {
+    title: 'Programul de management',
+    text: `Programul președintelui ARPIA pe durata mandatului (martie 2024 – martie 2028)`,
+    link: '/ARPIA/program.pdf',
   },
   {
     title: 'Contact',

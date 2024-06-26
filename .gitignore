@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#my folders
+/src-backup-08.05
+
 #Junk
 .vscode/
 .idea/

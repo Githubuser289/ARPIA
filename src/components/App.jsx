@@ -26,6 +26,7 @@ export function App() {
         </Route>
         <Route path="activitati" element={<Activitati />} />
         <Route path="galerie" element={<Galerie />} />
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );
