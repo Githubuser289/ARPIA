@@ -9,7 +9,7 @@ function Contact() {
 
         <div className="emaildiv">
           <i>arpiaro@yahoo.com</i>
-          <i>secretariat.arpia@gmail.com</i>
+          <i>secretariatarpia@gmail.com</i>
         </div>
       </div>
 
