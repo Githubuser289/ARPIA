@@ -2,6 +2,15 @@ import { useState } from 'react';
 import './Accordion.css';
 import Contact from './Contact.jsx';
 
+export function formatText(text) {
+  // Înlocuim '*' cu '<br>' și adăugăm 5 caractere blank (&nbsp;) la începutul fiecărui rând
+  const formattedText = text
+    .split('*')
+    .map(line => `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}`)
+    .join('<br>');
+  return formattedText;
+}
+
 function Accordion({ data }) {
   const [curOpen, setCurOpen] = useState(null);
 
@@ -36,7 +45,11 @@ function AccordionItem({ curOpen, onOpen, title, num, link, children }) {
       <p className="title">{title}</p>
       <p className="icon">{isOpen ? '-' : '+'}</p>
 
-      {isOpen && <div className="content-box">{children}</div>}
+      {isOpen && (
+        <div className="content-box">
+          <p dangerouslySetInnerHTML={{ __html: formatText(children) }}></p>
+        </div>
+      )}
       {isOpen && link !== '' && (
         <a
           className="content-box"

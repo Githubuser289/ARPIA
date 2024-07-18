@@ -1,11 +1,12 @@
 export const meniu = [
   {
-    title: 'Scurt istoric',
-    text: `*** trebuie stabilit ce va apare`,
+    title: 'Addenda',
+    text: `După o întrerupere de 43 de ani a existenței sale, ARPA a renăscut, la 19 mai 1990, sub noua denumire de Asociația Română pentru Propaganda și Istoria Aeronauticii (ARPIA), grație entuziasmului și sprijinului material ale unor cadre militare active, în rezervă sau în retragere din aviația militară a României, precum și a diverselor categorii de personal din aviația civilă, devenind astăzi un vector de promovare a imaginii Aeronauticii Române in mediile social, economic, educațional, sportiv și turistic.`,
+    link: '/ARPIA/Addenda.pdf',
   },
   {
     title: 'Statutul ARPIA',
-    text: 'Asociația Română pentru Propaganda şi Istoria Aeronauticii este persoană juridică română de drept privat, fără scop patrimonial, constituită în temeiul dreptului constituțional la liberă asociere și a prevederilor Ordonanței Guvernului nr. 26/2000 cu privire la asociații și fundații, aprobată prin Legea nr. 246/2005, cu modificările și completările ulterioare. Asociația își desfășoară activitatea în baza legislației în vigoare și a prezentului statut.',
+    text: 'Asociația Română pentru Propaganda şi Istoria Aeronauticii este persoană juridică română de drept privat, fără scop patrimonial, constituită în temeiul dreptului constituțional la liberă asociere și a prevederilor Ordonanței Guvernului nr. 26/2000 cu privire la asociații și fundații, aprobată prin Legea nr. 246/2005, cu modificările și completările ulterioare.*Asociația își desfășoară activitatea în baza legislației în vigoare și a prezentului statut.',
     link: '/ARPIA/statutARPIA.pdf',
   },
   {
