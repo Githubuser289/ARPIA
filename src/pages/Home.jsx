@@ -42,8 +42,61 @@ const Home = () => {
         }
       );
       animBackImg.onfinish = event => {
-        const markup = `<p></p><h2>Aici pot apare anunturi si ultimele n postari cu activitati desfasurate in toate filialele</h2>`;
+        const markup = `
+          <p></p>
+    <h2>Aici pot apărea anunțuri și ultimele n postări cu activități desfășurate în toate filialele</h2>
+
+    <div id="pdfModal" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    ">
+      <div style="
+        width: 80vw;
+        height: 85vh;
+        background: white;
+        border-radius: 8px;
+        padding: 16px;
+        position: relative;
+      ">
+        <button id="closePdfModal" style="
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          z-index: 10;
+          padding: 8px 12px;
+          cursor: pointer;
+        ">
+          Închide
+        </button>
+
+        <iframe
+          src="/ARPIA/apelGlRujinschi.pdf"
+          style="
+            width: 100%;
+            height: calc(100% - 40px);
+            margin-top: 40px;
+            border: none;
+          "
+        ></iframe>
+      </div>
+    </div>
+        `;
         titleBox.innerHTML = markup;
+
+        const closeButton = document.getElementById('closePdfModal');
+        const pdfModal = document.getElementById('pdfModal');
+
+        closeButton.addEventListener('click', () => {
+          pdfModal.style.display = 'none';
+        });
       };
     }
     window.addEventListener('click', () => {
